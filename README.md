@@ -1,9 +1,9 @@
-# Barline 
+# Bash Multiple Progress Bar 
 Bash progress bar fit your bash window even after resize. 
 Highlight "WARN" and "ERROR" as well. 
 
 ```bash
-source ./bl.sh 
-sh log.sh |bl 
-sh log.sh |bl |egrep "id|^"
+source ./bar.sh 
+sh log.sh |bar # display two progress bar and error logs.
+sh log.sh |bar |egrep "id|^" # highlight "id" in error logs.
 ```

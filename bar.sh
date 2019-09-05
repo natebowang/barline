@@ -118,7 +118,7 @@ printLog() {
     echo -e "$(echo "$line" | sed "s/WARN/\\\\e[33mWARN\\\\e[0m/g" | sed "s/ERROR/\\\\e[31mERROR\\\\e[0m/g")"
 }
 
-bl() {
+bar() {
     # 当log包含task 0.2这样的Pattern时，不打印这句log，而是在最下边画一个进程条。
     # System.out.println(task1 + " " + (float) i/count);
     barPattern0d="^\S+ 0\.[0-9]+$"
